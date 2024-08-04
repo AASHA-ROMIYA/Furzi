@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="CSS/Home.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/bf765baeaf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img src="Image/file.png" class="logo">
+        <ul>  
+            <li><a  class="active" href="index.html">Home</a></li>
+            <li><a href="MarketPlace.html">Market place</a></li>
+            <li><a href="Adoption.html">Adoption</a></li>
+            <li><a href="PetCare.html">Pet care</a></li>
+            <li><a href="#">Social</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i> <span class="profile-text">Profile</span></a></li>
+        </ul>
+    </nav>
+    <section class="main">
+        <section class="home">
+            <h2>Home</h2>
+            <h5>Welcome! Username,</h5>
+            <h6>Explore wide range of pet services and dog breeds which are offered by us.</h6>
+        </section>
+        <section class="marketPlace">
+            <h5 class="mar">Market place.</h5></br>
+                <div class="photo">
+                  <div class="image">
+                    <img src="Image/dog2.jpg" alt="image" class="img1">
+                   <div class="btn" >
+                    <button class="btn1"><</button>
+                    <button class="btn2">></button>
+                   </div>
+                  </div>
+                </div>
+               <p>Explore wide range of dog breeds in reasonable price at our market place.</p>  
+               <button class="explore"><a href="MarketPlace.html">Explore <i class="fa-solid fa-arrow-right"></i></a></button>
+        </section>
+        
+   </section>
+   <section class="adoption" id="adoption">
+    <h5>Adoption.</h5></br>
+    <div class="photo">
+      <div class="image">
+        <img src="Image/dog1.jpg" alt="image" class="img" class="img2">
+       <div class="btn" >
+        <button class="btn3"><</button>
+        <button class="btn4">></button>
+       </div>
+    </div>
+   </div>
+   <p>Explore dog shelters for funding or find dogs for adoptions from dog shelters.</p>    
+   <button class="explore"><a href="Adoption.html">Explore   <i class="fa-solid fa-arrow-right"></i></a></button> 
+ </section>
+
+   <section class="marketPlace petcare">
+    <h5>Pet Care</h5></br>
+    <div class="photo">
+      <div class="image">
+        <img src="Image/Untitled design_20240528_211038_0000.png" alt="image" class="imgpet" class="img3">
+       <div class="btn" >
+        <button class="btn5"><</button>
+        <button class="btn6">></button>
+    </div>
+    </div>
+   </div>
+   <p>Explore clinic near your locality and book appointments, search for pet friendly apartments and residence.</p>    
+   <button class="explore"><a href="PetCare.html">Explore   <i class="fa-solid fa-arrow-right"></i></a></button> </section>
+   <section class="Social">
+    <h5>Social</h5></br>
+    <div class="photo">
+      <div class="image">
+        <img src="Image/Untitled design_20240528_212145_0000.png" alt="image" class="imgsocial">
+       <div class="btn" >
+        <button class="btn7"><</button>
+        <button class="btn8">></button>
+    </div>
+    </div>
+   </div>
+   <p>Explore short videos and photos of pets which are uploaded by the users.</p>
+   <button class="explore"><a href="#">Explore<i class="fa-solid fa-arrow-right"></i></a></button> 
+</section>
+    
+</body>
+<script>
+    //market place
+    const img=document.querySelector(".img1");
+    const btn1=document.querySelector(".btn1");
+    const btn2=document.querySelector(".btn2");
+    const images=["Image/dog2.jpg","Image/Untitled design_20240528_211544_0000.png","Image/Untitled design_20240528_210943_0000.png","Image/Untitled design_20240528_210638_0000.png"];
+    var num=0;
+    btn2.addEventListener("click",()=>{
+    num++;
+    if(num>=images.length)
+    {
+        num=0;
+    console.log(img.src=images[num]);
+    }
+    else{
+        console.log(img.src=images[num]); 
+        
+    }
+    
+    }
+    )
+    console.log(images.length);
+    btn1.addEventListener("click",()=>{
+    num--;
+    if(num<0)
+    {
+        num=images.length-1;
+        img.src=images[num];
+    
+    }
+    else{
+        img.src=images[num]; 
+        
+    }
+    
+    }
+    )
+
+    // Adoption
+
+    const imgg=document.querySelector(".img");
+    const btn3=document.querySelector(".btn3");
+    const btn4=document.querySelector(".btn4");
+    const imagess=["Image/dog1.jpg","Image/Untitled design_20240528_212351_0000.png","Image/Untitled design_20240528_211839_0000.png","Image/Untitled design_20240528_211743_0000.png"];
+    num=0;
+    btn3.addEventListener("click",()=>{
+    num++;
+    if(num>=imagess.length)
+    {
+        num=0;
+    console.log(imgg.src=imagess[num]);
+    }
+    else{
+        console.log(imgg.src=imagess[num]); 
+        
+    }
+    
+    }
+    )
+    console.log(imagess.length);
+    btn4.addEventListener("click",()=>{
+    num--;
+    if(num<0)
+    {
+        num=imagess.length-1;
+        imgg.src=imagess[num];
+    
+    }
+    else{
+        imgg.src=imagess[num]; 
+        
+    }
+    
+    }
+    )
+
+    //petCare
+
+    const imgpet=document.querySelector(".imgpet");
+    const btn5=document.querySelector(".btn5");
+    const btn6=document.querySelector(".btn6");
+    const imagepet=["Image/Untitled design_20240528_211038_0000.png","Image/Untitled design_20240528_212010_0000.png","Image/Untitled design_20240528_211139_0000.png","Image/Untitled design_20240528_212056_0000.png"];
+    num=0;
+    btn5.addEventListener("click",()=>{
+    num++;
+    if(num>=imagepet.length)
+    {
+        num=0;
+    console.log(imgpet.src=imagepet[num]);
+    }
+    else{
+        console.log(imgpet.src=imagepet[num]); 
+        
+    }
+    
+    }
+    )
+    console.log(imagepet.length);
+    btn6.addEventListener("click",()=>{
+    num--;
+    if(num<0)
+    {
+        num=imagepet.length-1;
+        imgpet.src=imagepet[num];
+    
+    }
+    else{
+        imgpet.src=imagepet[num]; 
+        
+    }
+    
+    }
+    )
+
+    //social
+
+
+    const imgsocial=document.querySelector(".imgsocial");
+    const btn7=document.querySelector(".btn7");
+    const btn8=document.querySelector(".btn8");
+    const imagesocial=["Image/Untitled design_20240528_212145_0000.png","Image/Untitled design_20240528_211701_0000.png","Image/Untitled design_20240528_211618_0000.png","Image/Untitled design_20240528_211544_0000.png"];
+    num=0;
+    btn7.addEventListener("click",()=>{
+    num++;
+    if(num>=imagesocial.length)
+    {
+        num=0;
+    console.log(imgsocial.src=imagesocial[num]);
+    }
+    else{
+        console.log(imgsocial.src=imagesocial[num]); 
+        
+    }
+    
+    }
+    )
+    console.log(imagesocial.length);
+    btn8.addEventListener("click",()=>{
+    num--;
+    if(num<0)
+    {
+        num=imagesocial.length-1;
+        imgsocial.src=imagesocial[num];
+    
+    }
+    else{
+        imgsocial.src=imagesocial[num]; 
+        
+    }
+    
+    }
+    )
+       </script>
+</html>

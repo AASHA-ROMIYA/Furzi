@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  body {
+    background-color: white;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    
+  }
+  h1{
+    color: black;
+    margin-left: 3%;
+    margin-top: 1%;
+  }
+  nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    background-color: black;
+  }
+  
+  .logo {
+   width:80px;
+   height:80px;
+   margin-top: 0px;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    list-style: none;
+    letter-spacing: 1px;
+    padding: 20px;
+    font-size: 20px;
+  }
+  
+  ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  ul li a:hover {
+    color: white;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  .profile-text {
+    display: none;
+  }
+  .head{
+    
+    margin: 1%;
+  }
+  .head i{
+    font-size: 35px;
+   margin-right: 6px;
+  }
+  .head  a{
+    text-decoration: none;
+    color:black;
+    display: flex;
+    align-items: center;
+  }
+ main{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ main h4{
+    
+    margin: 20px;
+    margin-left: -60%;
+ }
+ main .container{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    height:1100px;
+    
+ }
+ main .container .img{
+    width:100%;
+    height:30%;
+    background-color: #f3f3f3;
+    border: 2px solid rgb(205, 201, 201);
+    overflow:scroll;
+    border-radius: 5px;
+ }
+ main .container img{
+ width:100%;
+ height:100%;
+ border-radius: 10px;
+ }
+ main .container button{
+    width:100px;
+    height:30px;
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin: 10px;
+ }
+ main .container p{
+    font-size: 18px;
+    margin: 10px;
+ }
+
+  @media  (max-width: 480px) {
+    .logo {
+      width:50px;
+      height:50px;
+     }
+     h1{
+      font-size: 25px;
+     }
+   
+    .checkbtn {
+      display: block;
+      order: 1;
+      margin-right: 20px;
+  }
+  
+  ul {
+      position: fixed;
+      top: 60px;
+      background-color: rgb(38, 35, 35);
+      right: -100%;
+      width: 45%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+      border-radius: 5px 0 0 5px;
+  }
+  
+  .profile-text {
+      display: inline;
+  }
+  
+  ul li {
+      margin: 2px 0;
+  }
+  
+  ul li a:hover {
+      font-size: 17px;
+      color: gray;
+  }
+  
+  ul li a {
+      font-size: 15px;
+  }
+  
+  #check:checked ~ ul {
+      right: 0;
+  }
+
+  .head{
+    
+    margin: 1%;
+  }
+  .head i{
+    font-size: 22px;
+    margin-top: -1px;
+  }
+  .head  a{
+    text-decoration: none;
+    color:black;
+    display: flex;
+    align-items: center;
+  }
+  .head  a h2{
+    font-size: 22px;
+  }
+
+  main{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ main h4{
+    
+    margin: 20px;
+    margin-left: -35%;
+ }
+ main .container{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    height:100vh;
+    margin-top: 20px;
+    
+ }
+ main .container .img{
+    width:100%;
+    height:23%;
+    background-color: #f3f3f3;
+    border: 2px solid rgb(205, 201, 201);
+    overflow:scroll;
+    border-radius: 5px;
+ }
+ main .container img{
+ width:100%;
+ height:100%;
+ border-radius: 10px;
+ }
+ main .container button{
+    width:100px;
+    height:30px;
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin: 10px;
+ }
+ main .container p{
+    font-size: 15px;
+    margin: 10px;
+ }
+  
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .logo {
+      width:60px;
+      height:60px;
+     }
+    .checkbtn {
+        display: block;
+        order: 1;
+        margin-right: 20px;
+    }
+  
+    ul {
+        position: fixed;
+        top: 60px;
+        background-color: rgb(38, 35, 35);
+        right: -100%;
+        width: 45%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+        border-radius: 5px 0 0 5px;
+    }
+  
+    .profile-text {
+        display: inline;
+    }
+  
+    ul li {
+        margin: 2px 0;
+    }
+  
+    ul li a:hover {
+        font-size: 17px;
+        color: gray;
+    }
+  
+    ul li a {
+        font-size: 15px;
+    }
+  
+    #check:checked ~ ul {
+        right: 0;
+    }
+
+    .head{
+    
+        margin: 1%;
+      }
+      .head i{
+        font-size: 25px;
+      }
+      .head  a{
+        text-decoration: none;
+        color:black;
+        display: flex;
+        align-items: center;
+      }
+      main{
+        width:100%;
+        height:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+     }
+     main h4{
+        
+        margin: 20px;
+        margin-left: -50%;
+     }
+     main .container{
+        display: flex;
+        flex-direction: column;
+        width:70%;
+        height:100vh;
+        margin-top: 30px;
+     }
+     main .container .img{
+        width:100%;
+        height:30%;
+        background-color: #f3f3f3;
+        border: 2px solid rgb(205, 201, 201);
+        overflow:scroll;
+        border-radius: 5px;
+     }
+     main .container img{
+     width:100%;
+     height:100%;
+     border-radius: 10px;
+     }
+     main .container button{
+        width:100px;
+        height:30px;
+        background-color: black;
+        color:white;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        margin: 10px;
+     }
+     main .container p{
+        font-size: 15px;
+        margin: 10px;
+     }
+}
